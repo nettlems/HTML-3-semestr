@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Относительное позиционирование</title>
+<style type ="text/css">
+#title1, #title2, #title3, #col1, #col2, #col3 { /* 1 */
+
+font-family: Verdana, Arial, sans-serif;
+font-weight: bold;
+font-size: 80%;
+color: white;
+width: 200px;
+border: 1px solid black;
+}
+
+#col1, #col2, #col3 { /* 2 */
+
+font-family: "Times New Roman", Times, serif;
+font-size: 100%;
+font-weight: normal;
+color: black;
+}
+#col1,#title1 {/*3*/
+position: absolute;
+}
+#col2,#title3 {/*4*/
+position: relative;
+left:205px;
+}
+#col3,#title4 {/*5*/
+position: relative;
+left:410 px;
+}
+#col1,#col2,#col3 {/*6*/
+top: 5px;
+}
+p {
+margin: 5px;
+}
+/* Цвет фона каждого слоя */
+
+#title1 { background: #b38541 }
+#title2 { background: #008159 }
+#title3 { background: #006077 }
+#col1 { background: #ebe0C5 }
+#col2 { background: #bbe1C4 }
+#col3 { background: #add0D9 }
+
+</style>
+</head>
+<body>
+
+<div class="tr">
+<div id=title1><p>Заголовок 1</p></div>
+<div id=title2><p>Заголовок 2</p></div>
+</div>
+<div id=title3>Заголовок 3</div>
+<div class="tr">
+<div id="col1"><p>...</p></div>
+<div id=col2><p>...</p></div>
+</div>
+<div id="col3"><p>...</p></div>
+</body>
+</html>

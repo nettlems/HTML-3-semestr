@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Две колонки одной высоты</title>
+<style type ="text/css">
+#container {
+border-left: 200px solid maroon;
+background:#f0f0f0;
+}
+#col1 {
+width: 200px;
+float: left;
+margin-left: -200px;
+color: #fff;
+}
+#col1 p {
+padding: 5px;
+margin: 0;
+}
+#col2 {
+padding: 5px;
+}
+div.clear {
+clear: both;
+}
+</style>
+</head>
+<body>
+
+<div id="container">
+<div id="col1">
+<p> IE, при изменении состояния пункта меню «Вид → Размер шрифта» или вращении колеса мыши с зажатым Ctrl, наблюдается изменение размера текста.</p>
+</div>
+<div id="col2">
+<p>В данном случае размер шрифта у тэга <a> будет примерно равен 11px (на самом деле 11,24px, такое значение необходимо для Opera, в ней не корректно организовано вычисление дробных величин).</p>
+</div>
+<div class="clear">&nbsp;</div>
+</div>
+</body>
+</html>

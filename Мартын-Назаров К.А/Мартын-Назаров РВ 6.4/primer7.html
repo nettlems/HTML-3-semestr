@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Conten-Type" content = "text/html;charset=windows-1251">
+<title>Позиционирование</title>
+<style type ="text/css">
+#leftcol {
+position:absolute;
+float: left;
+width: 400px;
+background: #800000;
+color: white;
+}
+#rightcol {
+position:relative;
+float: left;
+left:350px;
+top:50px;
+width: 120px;
+background: gray;
+border:solid 1px black;
+}
+#leftcol P{
+padding:10px;
+padding-right:50px;
+margin:0;
+}
+#rightcol P{
+padding:10px;
+padding-top:0
+}
+</style>
+</head>
+<body>
+<div id="leftcol">
+<p> Кроме использования свойства float для размещения рядом по горизонтали двух и более слоев, для этой же цели применяется и свойство position. Сложно оценить, какой подход с применением этих свойств лучше, если они в итоге дают одинаковый результат. </p>
+<div id="rightcol">
+<p> Некоторые элементы в CSS являются блочными и поэтому начинаются с новой строки. Например, если расположить два абзаца с тегами P, то они будут находиться друг под другом. Другие же элементы являются «строчными», т.е. отображаются на странице в одну строку.</p>
+</body>
+</html>
